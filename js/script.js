@@ -135,7 +135,7 @@ function setupFormListeners() {
                 getRecipebyname(search, mealGrid);
             }
             else {
-                mealGrid.innerHTML = "Please enter somthing before submitting!!!"
+                mealGrid.innerHTML = "Please enter something before submitting!!!"
                 mealGrid.style.color = 'darkred';
             }
 
