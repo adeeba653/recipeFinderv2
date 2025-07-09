@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecipeFinder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-header">
+                <a class="nav-logo" href="index.html">
+                    <img src="./assets/logo.png" alt="RecipeFinder" />
+                    <h1 class="logo-text">RecipeFinder</h1>
+                </a>
+
+                <button class="btn nav-btn"><img src="./assets/menu-btn.svg" alt=""></button>
+            </div>
+            <div class="nav-links">
+                <ul class="navbar-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="recipes.html">BROWSE</a></li>
+                    <li><a href="random.html">RANDOM</a></li>
+                    <li>
+                        <a href="favorites.html">FAVORITES
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+
+
+        <section class="browse_by">
+            <article class="browseby_area" id="byname">
+                <h2>Browse By Name.
+                </h2>
+                <!--  search meal by name -->
+                <form class="search-form" id="byname_search">
+                    <input class="browse-input" type="text" name="searchInput" placeholder="Browse by meal ...">
+                    <button class="browse-btn " id="btn1" type="submit">Browse</button>
+                </form>
+
+                <br>
+
+                <article class="result-area" id="byname_results">
+                    <div class="mealGrid" id="byname">
+
+
+
+                    </div>
+
+                </article>
+
+
+            </article>
+
+
+
+
+            <article class="browseby_area" id="byarea">
+                <h2>Browse By Area.
+                </h2>
+
+                <!--  search meal by area -->
+                <form class="search-form" id="byarea_search">
+                    <input class="browse-input" type="text" name="searchInput" placeholder="Browse by area...">
+                    <button class="browse-btn" id="btn2" type="submit">Browse</button>
+                </form>
+
+                <br>
+
+                <article class="result-area" id="byarea_results">
+                    <div class="mealGrid" id="byarea"></div>
+                </article>
+
+
+
+            </article>
+
+
+            <article class="browseby_area" id="byingred">
+                <h2>Browse By Ingredient.
+                </h2>
+
+
+                <!--  search meal by ingredient -->
+                <form class="search-form" id="byingred_search">
+                    <input class="browse-input" type="text" name="searchInput" placeholder="Browse by ingredient...">
+                    <button class="browse-btn" id="btn3" type="submit">Browse</button>
+                </form>
+
+                <br>
+
+                <article class="result-area" id="byingred_results">
+                    <div class="mealGrid" id="byingred"></div>
+                </article>
+
+
+
+            </article>
+            <article class="browseby_area" id="bycategory">
+                <h2>Browse By Category.
+                </h2>
+
+
+                <!--  search meal by ingredient -->
+                <form class="search-form" id="bycategory_search">
+                    <input class="browse-input" type="text" name="searchInput" placeholder="Browse by category...">
+                    <button class="browse-btn" id="btn4" type="submit">Browse</button>
+                </form>
+
+                <br>
+
+                <article class="result-area" id="bycategory_results">
+                    <div class="mealGrid" id="bycategory"></div>
+                </article>
+
+
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 RecipeFinder. All rights reserved.</p>
+
+            <nav class="footer-nav">
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms of Service</a>
+            </nav>
+
+        </div>
+    </footer>
+
+
+    <div id="mealModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modalMealName"></h2>
+            <img id="modalMealImage" alt="Meal Image" />
+            <h3>Ingredients</h3>
+            <ul id="modalIngredients"></ul>
+            <h3>Instructions</h3>
+            <p id="modalInstructions"></p>
+            <p id="ytLink"></p>
+
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
